@@ -98,6 +98,8 @@ class KeyType(IntEnum):
     # from version 3.0
     EC_EDWARDS = 0x00000040
 
+    HSS = 0x00000046
+
     _VENDOR_DEFINED = 0x80000000
 
     def __repr__(self):
@@ -709,6 +711,9 @@ class Mechanism(IntEnum):
     # from version 3.0
     EDDSA = 0x00001057
     EC_EDWARDS_KEY_PAIR_GEN = 0x00001055
+
+    HSS_KEY_PAIR_GEN = 0x00004032
+    HSS = 0x00004033
 
     _VENDOR_DEFINED = 0x80000000
 

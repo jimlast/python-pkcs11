@@ -27,6 +27,7 @@ DEFAULT_GENERATE_MECHANISMS = {
     KeyType.RSA: Mechanism.RSA_PKCS_KEY_PAIR_GEN,
     KeyType.X9_42_DH: Mechanism.X9_42_DH_KEY_PAIR_GEN,
     KeyType.EC_EDWARDS: Mechanism.EC_EDWARDS_KEY_PAIR_GEN,
+    KeyType.HSS: Mechanism.HSS_KEY_PAIR_GEN,
 }
 """
 Default mechanisms for generating keys.
@@ -46,6 +47,7 @@ DEFAULT_KEY_CAPABILITIES = {
     KeyType.RSA: _ENCRYPTION | _SIGNING | _WRAPPING,
     KeyType.GENERIC_SECRET: 0,
     KeyType.EC_EDWARDS: _SIGNING,
+    KeyType.HSS: _SIGNING
 }
 """
 Default capabilities for generating keys.
@@ -69,6 +71,7 @@ DEFAULT_SIGN_MECHANISMS = {
     KeyType.EC: Mechanism.ECDSA_SHA512,
     KeyType.RSA: Mechanism.SHA512_RSA_PKCS,
     KeyType.EC_EDWARDS: Mechanism.EDDSA,
+    KeyType.HSS: Mechanism.HSS
 }
 """
 Default mechanisms for sign/verify.

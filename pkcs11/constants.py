@@ -343,6 +343,13 @@ class Attribute(IntEnum):
 
     _VENDOR_DEFINED = 0x80000000
 
+    HSS_LEVELS = 0x00000617
+    HSS_LMS_TYPE = 0x00000618
+    HSS_LMOTS_TYPE = 0x00000619
+    HSS_LMS_TYPES = 0x0000061a
+    HSS_LMOTS_TYPES = 0x0000061b
+    HSS_KEYS_REMAINING = 0x0000061c
+
     def __repr__(self):
         return '<Attribute.%s>' % self.name
 
